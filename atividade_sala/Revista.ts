@@ -1,6 +1,6 @@
 import { MaterialLeitura } from "./MaterialLeitura";
 
-class Revista implements MaterialLeitura{
+export class Revista implements MaterialLeitura{
     titulo: string;
     autor: string;
     edicao: number;
