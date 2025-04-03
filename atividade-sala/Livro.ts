@@ -1,13 +1,16 @@
 import { MaterialLeitura } from "./MaterialLeitura";
-class Livro{
+export class Livro implements MaterialLeitura {
     titulo: string;
-    material: string;
+    autor: string;
     numeroPagina: number;
 
-    constructor(titulo: string, material: string, numeroPagina: number){
+    constructor(titulo: string, autor: string, numeroPagina: number){
         this.titulo = titulo;
-        this.material = material 
+        this.autor = autor;
         this.numeroPagina = numeroPagina;
     }
     
+    exibirDetalhe(): void {
+        console.log("Título: " + this.titulo + ", autor: "+ this.autor + ", número da página: " + this.numeroPagina)
+    }
 }

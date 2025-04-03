@@ -1,5 +1,5 @@
 export interface MaterialLeitura{
     titulo: string;
-    material: string;
+    autor: string;
     exibirDetalhe(): void;
 }
